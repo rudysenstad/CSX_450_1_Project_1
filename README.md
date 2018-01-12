@@ -1,8 +1,9 @@
 # CSX_450_1_Project_1
 
-![jupyter-setp](jupyter-docker-aws-setup.png "User access to setup and diagram of embedded layout")
+## Jupyter Web GUI Deployment Diagram
+![jupyter-setup](jupyter-docker-aws-setup.png "User access to setup and diagram of embedded layout")
 
-
+## Step-by-Step Jupyter Web GUI Deployment
 1. Create ssh keys on your local machine
    - install GIT bash (https://git-scm.com/downloads)
      - select vim for text editor
@@ -55,3 +56,13 @@
    - Check the STDOUT for the Jupyter login, use the container id and run "docker logs <container id>"
    - Copy the url like http://localhost:8888/?token=<some sha256> to your brower, but replace localhost with the EC2's IP address
 9. git clone https://github.com/rudysenstad/UCLA_CSX_450_1_2018_W.git
+
+## Estimated Costs
+1. Based on keeping EC2 instance running for 3 months
+2. 30 GB hard drive
+3. Assume a 2GB inbound traffic
+| EC2 Instance Type | vCPU | Memory | Has GPU? | On-Demand Hourly Cost | 3-month Cost  |
+| ----------------- |:----:|:------:|:--------:|:---------------------:| -------------:|
+| t2.micro          | 1    | 1      | No       | $0.012                | $8.50         |
+| t2.2xlarge        | 8    | 32     | No       | $0.371                |   $271.72     |
+| g2.2xlarge        | 8    | 15     | Yes      | $0.650                |    $475.80    |
