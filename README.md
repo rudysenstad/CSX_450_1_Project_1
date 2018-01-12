@@ -53,5 +53,5 @@
    - Make a shortcut to our image, "docker tag jupyter/datascience-notebook dsnb"
    - Launch a container, run the command "docker run -v /home/ubuntu:/home/jovyan -p 8888:8888 -d dsnb"	
    - Check the STDOUT for the Jupyter login, use the container id and run "docker logs <container id>"
-   - Copy the url like http://localhost:8888/?token=b53dcdfad30054cf3d623f2495af87b2e1f05e2bd66c53f0 to your brower, but replace localhost with the EC2's IP address
+   - Copy the url like http://localhost:8888/?token=<some sha256> to your brower, but replace localhost with the EC2's IP address
 9. git clone https://github.com/rudysenstad/UCLA_CSX_450_1_2018_W.git
