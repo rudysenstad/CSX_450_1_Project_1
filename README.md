@@ -61,8 +61,11 @@
 1. Based on keeping EC2 instance running for 3 months
 2. 30 GB hard drive
 3. Assume a 2GB inbound traffic
+
+
 | EC2 Instance Type | vCPU | Memory | Has GPU? | On-Demand Hourly Cost | 3-month Cost  |
 | ----------------- |:----:|:------:|:--------:|:---------------------:| -------------:|
 | t2.micro          | 1    | 1      | No       | $0.012                | $8.50         |
 | t2.2xlarge        | 8    | 32     | No       | $0.371                |   $271.72     |
 | g2.2xlarge        | 8    | 15     | Yes      | $0.650                |    $475.80    |
+
